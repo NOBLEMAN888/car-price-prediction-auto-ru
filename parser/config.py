@@ -11,7 +11,7 @@ HEADERS = {
     "Accept-Language": "ru-RU,ru;q=0.9",
 }
 
-MAX_PAGES = 1
+MAX_PAGES = 99
 MAX_CARS = 10_000
 
 SLEEP_FROM = 0.8
