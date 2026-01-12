@@ -12,7 +12,7 @@
 ценообразовании признаки для новых и подержанных авто различны.
 
 Анализ данных и построение ML модели с помощью CatBoost выполнялось
-в [Jupiter notebook](./car_price_prediction_auto_ru.ipynb).
+в [car_price_prediction_auto_ru.ipynb](./car_price_prediction_auto_ru.ipynb).
 
 ### Структура датасета
 
