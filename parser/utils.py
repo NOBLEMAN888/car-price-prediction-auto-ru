@@ -4,7 +4,7 @@ import time
 from bs4 import BeautifulSoup
 import re
 from urllib.parse import urlsplit, urlunsplit
-from config import BASE_URL, SLEEP_FROM, SLEEP_TO
+from config import SLEEP_FROM, SLEEP_TO
 
 NEW_CAR_RE = re.compile(
     r"^https://auto\.ru/cars/new/group/[^/]+/[^/]+/.*$",
@@ -41,8 +41,8 @@ def _clean_url(u: str) -> str:
     return urlunsplit((parts.scheme, parts.netloc, parts.path, "", ""))
 
 
-def get_listing_links(page: int, session) -> list[str]:
-    url = BASE_URL if page == 1 else f"{BASE_URL}?page={page}"
+def get_listing_links(base_url, page: int, session) -> list[str]:
+    url = base_url if page == 1 else f"{base_url}?page={page}"
     r = session.get(url, timeout=20)
     r.raise_for_status()
 
@@ -179,7 +179,7 @@ def parse_body_type(soup, sale):
     return body_type
 
 
-def parse_car_page(url: str, session):
+def parse_car_page(url: str, session, city: str):
     r = session.get(url, timeout=20)
     if r.status_code != 200:
         return None
@@ -194,6 +194,7 @@ def parse_car_page(url: str, session):
     characteristics = parse_characteristics(soup)
     engine_info = parse_engine(characteristics.get("двигатель"))
 
+    city = city
     is_new = sale.get("state") == "new"
 
     price = sale.get("price")
@@ -230,6 +231,7 @@ def parse_car_page(url: str, session):
     is_left_hand_drive = parse_steering_wheel(characteristics.get("руль"))
 
     car = {
+        "city": city,
         "is_new": is_new,
         "price": price,
         "tax_per_year": tax_per_year,
