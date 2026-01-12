@@ -1,4 +1,11 @@
 requests
 beautifulsoup4
 lxml
+
+numpy<2.4
 pandas
+scikit-learn
+catboost
+shap
+matplotlib
+seaborn
