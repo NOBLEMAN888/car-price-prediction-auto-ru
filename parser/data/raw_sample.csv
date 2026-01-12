@@ -1,0 +1,11 @@
+city,is_new,price,tax_per_year,year,km-age,brand,model,color,body_type,drive_type,transmission,engine_type,engine_volume,power_hp,is_left_hand_drive,url
+moskva,True,3650000.0,0.0,2023,0,GAC Aion,Hyptec GT (Hyper GT),серый,седан,задний,automatic,electric,,340,True,https://auto.ru/cars/new/group/aion/hyper_gt/23735445/23736579/1130033145-d17add69/
+moskva,True,5800000.0,73500.0,2025,0,BYD,FangChengBao Titanium 7,синий,suv,полный,variator,hybrid,1.5,490,True,https://auto.ru/cars/new/group/byd/fangchengbao_titanium_7/24103042/24890817/1130727259-d669d474/
+moskva,True,10990000.0,48900.0,2024,0,Dongfeng,Mengshi M-Hero 917,чёрный,suv,полный,automatic,hybrid,1.5,816,True,https://auto.ru/cars/new/group/dongfeng/mengshi_917/23663313/23741411/1130740208-6394846c/
+moskva,True,3239990.0,8000.0,2024,0,FAW,Bestune T90,белый,suv,передний,robot,petrol,1.5,160,True,https://auto.ru/cars/new/group/faw/bestune_t90/24045135/24045146/1130547928-91cb8da7/
+moskva,True,8990000.0,40200.0,2025,0,Infiniti,QX60,чёрный,suv,полный,automatic,petrol,2.0,268,True,https://auto.ru/cars/new/group/infiniti/qx60/24084326/24084375/1130798477-b0ff1572/
+moskva,True,7500000.0,,2021,0,Jeep,Gladiator,серый,пикап,полный,automatic,petrol,3.6,285,True,https://auto.ru/cars/new/group/jeep/gladiator/21698322/23490912/1130723863-68d775d5/
+moskva,True,8696300.0,0.0,2025,0,LEVC,L380,чёрный,минивэн,полный,automatic,electric,,544,True,https://auto.ru/cars/new/group/levc/l380/23989223/23989281/1127741264-a3b4a791/
+moskva,True,17750000.0,0.0,2023,0,Lotus,Eletre,красный,suv,полный,automatic,electric,,918,True,https://auto.ru/cars/new/group/lotus/eletre/23410343/23761583/1130232189-22c92aac/
+moskva,True,8900000.0,14688.0,2025,0,Mercedes-Benz,GLC Coupe,чёрный,suv,полный,automatic,petrol,2.0,204,True,https://auto.ru/cars/new/group/mercedes/glc_coupe/24069848/24069861/1130839071-45a4a39d/
+moskva,True,8900000.0,14688.0,2025,0,Mercedes-Benz,GLC Coupe,чёрный,suv,полный,automatic,petrol,2.0,204,True,https://auto.ru/cars/new/group/mercedes/glc_coupe/24069848/24069861/1130839242-069e3a9b/
