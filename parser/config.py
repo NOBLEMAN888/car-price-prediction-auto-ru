@@ -1,6 +1,13 @@
 from cookies import COOKIES
 
-BASE_URL = "https://auto.ru/sankt-peterburg/cars/all/"
+BASE_URLS = {
+    "moskva_new": "https://auto.ru/moskva/cars/new/",
+    "moskva_used": "https://auto.ru/moskva/cars/used/",
+    "sankt-peterburg_new": "https://auto.ru/sankt-peterburg/cars/new/",
+    "sankt-peterburg_used": "https://auto.ru/sankt-peterburg/cars/used/",
+    "vladivostok_new": "https://auto.ru/vladivostok/cars/new/",
+    "vladivostok_used": "https://auto.ru/vladivostok/cars/used/",
+}
 
 HEADERS = {
     "User-Agent": (
